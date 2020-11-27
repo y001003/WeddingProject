@@ -21,7 +21,7 @@ public class BoardVO {
 	private String filename;
 	private String ip;
 	private String id;
-	private int mem_num;
+	private int m_num;
 	public int getNum() {
 		return num;
 	}
@@ -98,18 +98,19 @@ public class BoardVO {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public int getMem_num() {
-		return mem_num;
-	}
-	public void setMem_num(int mem_num) {
-		this.mem_num = mem_num;
-	}
+
 	//주의 toString를 재정의할 때 byte[] 타입의 필드 uploadfile은 제외시킨다.
 	@Override
 	public String toString() {
 		return "BoardVO [num=" + num + ", title=" + title + ", content=" + content + ", hit=" + hit + ", reg_date="
 				+ reg_date + ", modify_date=" + modify_date + ", upload=" + upload + ", filename=" + filename + ", ip="
-				+ ip + ", id=" + id + ", mem_num=" + mem_num + "]";
+				+ ip + ", id=" + id + ", m_num=" + m_num + "]";
+	}
+	public int getM_num() {
+		return m_num;
+	}
+	public void setM_num(int m_num) {
+		this.m_num = m_num;
 	}
 	
 

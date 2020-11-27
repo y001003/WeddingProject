@@ -22,9 +22,10 @@
 		</ul>
 	</form>
 	<div class="align-right">
-		<c:if test="${!empty user_id}">
+<%-- 		<c:if test="${!empty user_id}">
 			<input type="button" value="글쓰기" onclick="location.href='write.do'">
-		</c:if>
+		</c:if> --%>
+		<input type="button" value="글쓰기" onclick="location.href='write.do'">
 	</div>
 	<c:if test="${count == 0 }">
 		<div class="result-display">등록된 게시물이 없습니다.</div>

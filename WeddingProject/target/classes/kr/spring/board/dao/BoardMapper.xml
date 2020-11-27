@@ -4,7 +4,7 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
 <mapper namespace="kr.spring.board.dao.BoardMapper">  
 	<select id="selectRowCount" parameterType="map" resultType="integer">
-		SELECT COUNT(*)	FROM spboard b JOIN spmember m ON b.mem_num=m.mem_num
+		SELECT COUNT(*)	FROM WED_WEDDINGHOLL b JOIN WED_MEMBER m ON b.m_num=m.m_num
 		<where>
 			<if test="keyword != '' and keyfield == 'title'">
 				b.title LIKE '%' || #{keyword} || '%'
@@ -19,7 +19,7 @@
 	</select>
 	<select id="selectList" parameterType="map" resultType="boardVO">
 		SELECT * FROM (SELECT a.*, rownum rnum FROM 
-			(SELECT * FROM spboard b JOIN spmember m ON b.mem_num=m.mem_num
+			(SELECT * FROM WED_WEDDINGHOLL b JOIN WED_MEMBER m ON b.m_num=m.m_num
 			<where>
 				<if test="keyword != '' and keyfield == 'title'">
 					b.title LIKE '%' || #{keyword} || '%'

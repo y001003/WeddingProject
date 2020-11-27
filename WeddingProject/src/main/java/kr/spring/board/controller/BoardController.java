@@ -90,8 +90,9 @@ public class BoardController {
 		if(result.hasErrors()) {
 			return "boardWrite";
 		}
-		//mem_num
-		boardVO.setMem_num((Integer)session.getAttribute("user_num"));
+		//m_num
+		//boardVO.setM_num((Integer)session.getAttribute("user_num"));
+		boardVO.setM_num(0);
 		//ip 반환
 		boardVO.setIp(request.getRemoteAddr());
 		if(log.isDebugEnabled()) {

@@ -56,7 +56,7 @@
 	<view-controller path="/main/main.do" view-name="main"/>
 	
 	<!-- 로그인 여부 체크 -->
-	<interceptors>
+<!-- 	<interceptors>
 		<interceptor>
 			<mapping path="/member/detail.do"/>
 			<mapping path="/member/update.do"/>
@@ -73,7 +73,7 @@
 			<beans:bean class="kr.spring.interceptor.WriterCheckInterceptor"/>
 		</interceptor>
 	</interceptors>
-
+ -->
 	<!-- 파일 업로드 -->
 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<beans:property name="maxUploadSize" value="52428800"/>

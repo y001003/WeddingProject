@@ -13,7 +13,7 @@ import kr.spring.board.domain.BoardVO;
 public interface BoardMapper {
 	public List<BoardVO> selectList(Map<String,Object> map);
 	public int selectRowCount(Map<String,Object> map);
-	@Insert("INSERT INTO spboard (num,title,content,uploadfile,filename,ip,mem_num) "
+	@Insert("INSERT INTO WED_WEDDINGHOLL (wh_num,wh_title,wh_content,wh_uploadfile,filename,ip,mem_num) "
 			+ "VALUES (board_seq.nextval,#{title},#{content},#{uploadfile},#{filename},#{ip},#{mem_num})")
 	public void insert(BoardVO board);
 	@Select("SELECT * FROM spboard b JOIN spmember m ON b.mem_num=m.mem_num WHERE b.num=#{num}")
