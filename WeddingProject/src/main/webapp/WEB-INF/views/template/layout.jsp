@@ -7,7 +7,6 @@
 <meta charset="UTF-8">
 <title><tiles:getAsString name="title"/></title>
 <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/layout.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/landing-page.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/bootstrap.css" >
 
 </head>

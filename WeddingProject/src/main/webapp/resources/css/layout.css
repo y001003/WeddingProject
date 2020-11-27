@@ -1,0 +1,21 @@
+img#home_weddinghall_board{
+	width:300px;
+}
+img#home_studio_board{
+	width:300px;
+}
+img#home_events_board{
+	width:300px;
+}
+div#main_body{
+	padding-top:30px;
+	text-align:center;
+	float:left;
+	width:100%;
+}
+div#main_footer{
+	padding-top:200px;
+	text-align:center;
+	float:left;
+	width:100%;
+}
